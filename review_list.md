@@ -23,7 +23,7 @@ I ett träd sitter $N$ fåglar. Fågel $i$ hörs med volym $A_i / (B_i + d_i)^2$
 * $\mathcal O(N \max \sqrt{A_i})$
 ___
 ## Bära matkassar från bilen
-Du har varit och handlat och alla matvaror ligger löst i bagaget i din bil. Du har en kappsäck med kapacitet $C$ kg och $I$ varor som väger $V_i$ och till antal $C_i$. Vad är det lägsta antalet turer du behöver gå mellan bilen och huset för att få in alla varor?
+Du har varit och handlat och alla matvaror ligger löst i bagaget i din bil. Du har en kappsäck med kapacitet $C$ kg och $I$ varor som väger $V_i$ och till antal $N_i$. Vad är det lägsta antalet turer du behöver gå mellan bilen och huset för att få in alla varor?
 ___
 ## Placering av matbutik
 Givet ett rutnät där vissa rutor har ett hus, återge minimala antalet mataffärer så att varje hus har minst 1 affär med max $D$ rutsteg (ej diagonalt) ifrån sig.
