@@ -1,3 +1,17 @@
+## April Fools
+Julius and Marcus are known for their infamous pranks. The only way to avoid their craft is to know the prank plan. The problem is that Julius and Marcus encrypts the plan before writing it down. Over the years you have figured out that they shift the alphabet a couple of steps. However, each year they shift the alphabet different amount of steps. For example, if the alphabet is shifted 3 steps, and the alphabet would look like the following:
+
+| A | B | C | D | E | F | G | H | I | J | K | L | M | N | O | P | Q | R | S | T | U | V | W | X | Y | Z |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| X | Y | Z | A | B | C | D | E | F | G | H | I | J | K | L | M | N | O | P | Q | R | S | T | U | V | W |
+
+An **A** would be encrypted as **X**. Your task is to do the reverse. Given an encrypted message and the number of steps the alphabet is shifted, decrypt the message into plain text. Only capital letters A-Z are scrambeled. All other characters sush as spaces or dots will remain the same.
+
+## Input
+First there will be a row with a single number $N$, the number of test cases. For each test case there will be two rows. The first contains the number steps $S$ the alphabet is shifted. The second row copntains the encrypted text. 
+
+---
+
 ## Skeleton Array
 
 *\<Insert amazing text here\>*
