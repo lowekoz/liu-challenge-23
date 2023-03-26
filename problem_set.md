@@ -58,7 +58,7 @@ weigh $W_i$ kg and can crawl $L_i$ meters (independent of weight carried),
 how long can the optimal turtle stack crawl?
 
 First line of input is the number of turtles, $N$. Following that is $N$ rows, each describing 
-turtle $i$ in the format '$C_i$ $W_i$ $L_i$'.
+turtle $i$ in the format ' $C_i$ $W_i$ $L_i$ '.
 
 Output the total crawl distance of the optimal turtle stack.
 ___
