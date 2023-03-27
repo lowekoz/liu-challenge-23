@@ -62,3 +62,11 @@ turtle $i$ in the format ' $C_i$ $W_i$ $L_i$ '.
 
 Output the total crawl distance of the optimal turtle stack.
 ___
+## Choire of Birds
+In a large tree there is a choire of $N$ birds, one at each node. At any given node of the tree, the volume of the bird at node $i$ is $\operatorname{floor}(A_i / (B_i + d^2))$, where $A_i$ and $B_i$ are non-negative constants and $d$ is the distance to the bird when walking along the branches. At which node is the total volume the highest?
+
+### Test cases
+* $\mathcal O(N^2)$
+* $\mathcal O(KN)$, where at most $K$ birds have $A_i>0$
+* $\mathcal O(N \max \sqrt{A_i})$
+___
