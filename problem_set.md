@@ -50,9 +50,10 @@ Given $N$ sea turtles, who each can carry $C_i$ kg on top of their shell, weigh 
 
 First line of input is the number of turtles, $N$. Following that is $N$ rows, each describing turtle $i$ in the format ' $C_i$ $W_i$ $L_i$ '.
 
-You can assume:\\
-$N < 1000$\\
-$C_i, W_i, L_i < 500 $ and being integers.
+You can assume:\newline
+$N$ < $1000$\newline
+$C_i$, $W_i$, $L_i < 500$\newline
+All input data are integers.
 
 
 Output the total crawl distance of the optimal turtle stack.
