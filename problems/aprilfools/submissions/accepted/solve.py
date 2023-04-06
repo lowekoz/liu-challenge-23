@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 A_INT = ord("A")
 Z_INT = ord("Z")
 ALPHABET_LENGTH = Z_INT - A_INT + 1
