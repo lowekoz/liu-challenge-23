@@ -15,9 +15,12 @@ def cmdlinearg(name, default=None):
 random.seed(int(cmdlinearg('seed', sys.argv[-1])))
 n = int(cmdlinearg('n')) # array size
 m = int(cmdlinearg('m')) # magnitude numbers
-flag = int(cmdlinearg('flag',0))
+maxa = cmdlinearg('maxa',default="")
 
-N = random.randint(2,n)
+N = random.randint(1,n)
+if maxa != "":
+    N = n
+
 A = []
 for _ in range(N):
     A.append(random.randint(-m, m))
