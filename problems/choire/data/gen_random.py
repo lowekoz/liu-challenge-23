@@ -1,6 +1,5 @@
 import sys
 import random
-from functools import cache
 
 def cmdlinearg(name, default=None):
     for arg in sys.argv:
@@ -55,8 +54,11 @@ while True:
 
     b_values = [random.randint(1, maxa) for _ in range(n)]
 
-    @cache
+    cache = {}
     def volume_of_branch(node, from_node=-1, current_distance=0):
+        key = (node, from_node, current_distance)
+        if key in cache: return cache[key]
+
         if current_distance ** 2 > maxa: return 0
 
         if from_node != -1:
@@ -68,6 +70,7 @@ while True:
         for other in neighbors[node]:
             total += volume_of_branch(other, node, current_distance + 1)
 
+        cache[key] = total
         return total
 
     possible = sorted(volume_of_branch(i) for i in range(n))
