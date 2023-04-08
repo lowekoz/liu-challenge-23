@@ -1,13 +1,10 @@
 \problemname{Desire For Coffee}
-At campus Valla of Linköping University, the center of attention is the building Kårallen (the Coral). A number of sea turtles, inhabiting Kårallen, has been given an important task, deliver coffee to Lithe Kod, the hosts of Liu Challenge. Since Kårallen has their own café, the sea turtles have no problem getting their flippers on a few hot cups of Java, but Lithe Kod resides in a completely different building. Sea turtles live in water which means they cannot crawl efficiently on land and get tired quickly. They do however have a solution to this problem, stacking.\\
+At campus Valla of Linköping University, the center of attention is the building Kårallen (the Coral). A number of sea turtles, inhabiting Kårallen, have been given an important task --- to deliver coffee to Lithe Kod, the hosts of Liu Challenge. Since Kårallen has its own café, the sea turtles have no problem getting their flippers on a few hot cups of Java, but Lithe Kod resides in a completely different building. Sea turtles live in water which means they cannot crawl efficiently on land and get tired quickly. They do however have a solution which allows them to crawl greater distances: stacking.\\
 \\
-Given $N$ sea turtles, who each can carry $C_i$ kg on top of their shell, weigh $W_i$ kg and can crawl $L_i$ meters (independent of weight carried), how long can the optimal turtle stack crawl?\\
-\\
-First line of input is the number of turtles, $N$. Following that is $N$ rows, each describing turtle $i$ in the format ' $C_i$ $W_i$ $L_i$ '.\\
-\\
-You can assume: \newline
-$N < 1000$ \newline
-$C_i$, $W_i$, $L_i < 500$ \newline
-All input data are integers.\\
-\\
-Output the total crawl distance of the optimal turtle stack.
+Given $N$ sea turtles, where the $i$:th turtle can carry $C_i$ kg on top of its shell, weighs $W_i$ kg and can crawl $L_i$ meters (independent of weight carried), how far can the optimal turtle stack crawl?\\
+
+\section*{Input}
+The first line of input contains an integer $N$ ($1 \leq N \leq 1000$), the number of sea turtles. Then follows $N$ lines, the $i$:th line ($1 \leq i \leq N$), describes turtle $i$ in the format '$C_i$ $W_i$ $L_i$' with ($1 \leq$ $C_i$, $W_i$, $L_i \leq 500$).
+
+\section*{Output}
+Output a single integer descriing the total crawl distance of the optimal turtle stack.
