@@ -1,19 +1,15 @@
 from functools import cache
+import sys
 
-@cache
+sys.setrecursionlimit(30000)
+
 def volume_of_branch(node, from_node=-1, current_distance=0):
-    if current_distance ** 2 > maximum_a:
-        return 0
-
-    if from_node != -1:
-        return volume_of_branch(node, -1, current_distance) - \
-            volume_of_branch(from_node, node, current_distance + 1)
-
     a, b = constants[node]
     total = a // (b + current_distance**2)
 
     for other in neighbors[node]:
-        total += volume_of_branch(other, node, current_distance + 1)
+        if other != from_node:
+            total += volume_of_branch(other, node, current_distance + 1)
 
     return total
 

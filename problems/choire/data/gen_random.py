@@ -25,9 +25,9 @@ if mode == "long" and n > 2:
         edges += [(i, i - 1)]
 elif mode == "star" and n > 3:
     # Star mode, place a few nodes with very high degree
-    edges = [(0, 1), (1, 2)]
-    for i in range(3, n // 2):
-        edges += [(i, random.randint(0, 2))]
+    edges = [(0, 1)]
+    for i in range(2, n // 2):
+        edges += [(i, random.randint(0, 1))]
 else:
     # Ranom mode, no predetermined edges
     pass
