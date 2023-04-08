@@ -1,5 +1,5 @@
 \problemname{Choire of Birds}
-In a large tree there is a choire of $N$ birds, one at each node. At any given node of the tree, the volume of the bird at node $i$ is $floor(A_i / (B_i + d^2))$, where $A_i$ and $B_i$ are constants and $d$ is the distance to the bird when walking along the branches. At which node of the tree is the total volume the loudest?
+In a large tree there is a choire of $N$ birds, one at each node. At any given node of the tree, the chirp from the bird at node $i$ can be heard with a sound volume of $floor(A_i / (B_i + d^2))$, where $A_i$ and $B_i$ are constants and $d$ is the distance to the bird when walking along the branches. At which node of the tree is the total volume the loudest?
 
 \section*{Input}
 The first line contains a single number $N$ ($1 \le N \le 25000$), the number of nodes in the tree. The $N$ following lines contain two numbers each, $A_i$ ($0 \le A_i \le 25$) and $B_i$ ($1 \le B_i \le 25$), the constants for node $i$ ($0 \le i \le N-1$). The $N-1$ lines following that contain two numbers each, $p_j$ and $q_j$, the nodes connected by edge number $j$. The graph does not contain a cycle.
