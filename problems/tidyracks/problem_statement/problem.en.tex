@@ -1,12 +1,9 @@
 \problemname{Tidy Racks}
-
 Strong as you are, you're only able to gym very late at night so that there are enough non-occupied weights available. 
-But after a whole day of activity at the gym, the weights are left in an unorderly mess and you feel that you have to organize the weights before you can begin your exercise.
+But after a whole day of activity at the gym, the weights are left in an unorderly mess and you feel that you have to organize the weights before you begin your exercise.
 
 There are $N$ racks in the gym. Each rack holds a single stack of weights and each stack can hold at most $K$ weights. 
-There exists four types of weights: 5s, 10s, 15s and 20s.
-
-You are allowed to perform the following operation (possibly zero, or more) times:
+There exists four types of weights: 5s, 10s, 15s and 20s. You are allowed to perform the following operation (possibly zero, or more) times:
 
 \begin{itemize}
     \item{1. Pick the topmost weight from any stack}
@@ -17,8 +14,6 @@ You are allowed to perform the following operation (possibly zero, or more) time
 You wonder if it is possible to order the weights so that each stack holds only a \textbf{single type} of weight by only performing the operation. Output "Yes" if it is possible, else "No".
 
 \section*{Input}
-The first line of input consists of two integers $N$ ($1 \leq N \leq 10000$), the number of racks and $K$ ($1 \leq K \leq 100$), the size of each rack stack.
-
-Then follows $N$ lines. The $i$:th line $1 \leq i \leq N$, are on the form $B_i, W_1, W_2, ..., W_{B_i}$ with $0 \leq B_i \leq K$ and $W \in \{5,10,15,20\}$, and describes the configuration of the $i$:th stack where $W_1$ denotes the weight at the bottom of the stack.
+The first line of input consists of two integers $N$ ($1 \leq N \leq 10000$), the number of racks and $K$ ($1 \leq K \leq 100$), the size of each rack stack. Then follows $N$ lines. The $i$:th line ($1 \leq i \leq N$), are in the format '$B_i, W_1, W_2, ..., W_{B_i}$' with ($0 \leq B_i \leq K$) and $W \in \{5,10,15,20\}$, and describes the configuration of the $i$:th stack where $W_1$ denotes the weight at the bottom of the stack.
 \section*{Ouput}
-Output (Case sensitive) a single line containing "Yes" if it is possible to order the weights using only the operation, else "No".
+Output (case sensitive) a single line containing "Yes" if it is possible to order the weights using only the operation, else "No".
