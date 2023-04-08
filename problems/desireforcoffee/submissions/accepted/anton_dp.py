@@ -22,5 +22,5 @@ for i in range(n):
     turtles.append((c, w, l))
 
 
-turtles.sort(reverse=True)
+turtles = sorted(turtles, key=lambda x: x[0]+x[1], reverse=True) #sort by sum of capacity and weight
 print(max_stack(float('inf'), 0))
