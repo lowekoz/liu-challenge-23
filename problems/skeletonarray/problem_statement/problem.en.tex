@@ -1,21 +1,14 @@
 \problemname{Skeleton Array}
-
-%\illustration{0.35}{barclassification.png}{}
-
-% No code skeleton is complete without the \textit{skeleton array}. 
-
 A hint of disarray permeates the air in the department of Bioinformatics at Linköping University. 
-Anatomy diagnostics reveal that the code skeleton used in all of the department's lab series has lost its
+Anatomy diagnostics reveal that the code skeleton, used in all of the department's lab series, has lost its
 skeleton array implementation!
 
 For an array $A$ of size $N$, define the \textit{skeleton array} of $A$, $S(A)$, as the array of differences between subsequent elements of $A$. 
 More formally, $S_i(A) = A_{i} - A_{i+1}$ for $1 \leq i < N$.
 
-
 %\begin{itemize}
 %    \item{Example: \, $A = [A_1,A_2,A_3]$, $S(A) = [A_1-A_2,A_2-A_3]$}
 %\end{itemize}
-
 
 Given an array $A$, you are tasked with finding an array $B$ such that $S(B) = A$ and the absolute value of the sum of $B$ is minimum. If there are multiple solutions $B$, output the one where $B_1$ is maximum.
 % $\mid \sum b |$
@@ -23,9 +16,7 @@ Given an array $A$, you are tasked with finding an array $B$ such that $S(B) = A
 
 
 \section*{Input}
-The first line of input consists of an integer $N$ ($1 \leq N \leq 10^5$), the size of the array $A$.
-
-The following line contains $N$ integers $A_1, A_2, ..., A_N$ with $|A_i| \leq 10^6$.
+The first line of input consists of an integer $N$ ($1 \leq N \leq 10^5$), the size of the array $A$. The following line contains $N$ integers $A_1, A_2, ..., A_N$ with $|A_i| \leq 10^6$.
 
 \section*{Output}
 Output a single line of $N+1$ space separated integers representing the array $B$.

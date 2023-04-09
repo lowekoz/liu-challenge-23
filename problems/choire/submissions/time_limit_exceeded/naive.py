@@ -1,4 +1,3 @@
-from functools import cache
 import sys
 
 sys.setrecursionlimit(30000)

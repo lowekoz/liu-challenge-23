@@ -1,7 +1,8 @@
-from functools import cache
-
-@cache
+cache = {}
 def volume_of_branch(node, from_node=-1, current_distance=0):
+    key = (node, from_node, current_distance)
+    if key in cache: return cache[key]
+
     if current_distance ** 2 > maximum_a:
         return 0
 
@@ -15,6 +16,7 @@ def volume_of_branch(node, from_node=-1, current_distance=0):
     for other in neighbors[node]:
         total += volume_of_branch(other, node, current_distance + 1)
 
+    cache[key] = total
     return total
 
 n = int(input())
