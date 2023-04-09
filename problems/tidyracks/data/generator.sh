@@ -10,7 +10,8 @@ USE_SCORING=0
 
 use_solution lk.cpp
 
-compile gen_random.py
+compile gen_random.py 
+compile gen_targeted.py
 
 sample 1
 sample 2
@@ -44,3 +45,7 @@ tc rand-003 gen_random n=500 k=50 seed=3
 tc rand-004 gen_random n=10000 k=100 seed=4
 tc rand-005 gen_random n=10000 k=100 maxa=1 seed=123
 tc rand-006 gen_random n=10000 k=100 maxa=1 seed=1234
+
+tc fool-001 gen_targeted target=1
+tc fool-002 gen_targeted target=2
+tc fool-003 gen_targeted target=3
