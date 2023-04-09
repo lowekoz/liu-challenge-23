@@ -16,10 +16,15 @@ random.seed(int(cmdlinearg('seed', sys.argv[-1])))
 n = int(cmdlinearg('n')) # array size
 m = int(cmdlinearg('m')) # magnitude numbers
 
+maxa = cmdlinearg("maxa",default="")
+
 N = random.randint(2,n)
+if maxa != "":
+    N = n
+
 A = []
 for _ in range(N):
-    A.append((random.randint(0, m), random.randint(0, m), random.randint(0, m)))
+    A.append((random.randint(1, m), random.randint(1, m), random.randint(1, m)))
 
 print(N)
 for tup in A:
