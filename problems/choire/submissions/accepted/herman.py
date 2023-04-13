@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 cache = {}
 def volume_of_branch(node, from_node=-1, current_distance=0):
     key = (node, from_node, current_distance)
