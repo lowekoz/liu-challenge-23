@@ -35,3 +35,5 @@ for line in lines[n+1:]:
     data[p] = data[q]
 
 assert len(set(union_find(i) for i in range(n))) == 1, "graph not connected"
+
+exit(42)
