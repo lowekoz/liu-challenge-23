@@ -33,8 +33,9 @@ tc few-3 gen_random n=$MAXN k=10 maxa=$MAXA mode=long 6
 
 group group3 45
 limits n=$MAXN
-tc 1
-tc 2
+include_group group1
+include_group group2
+include_group sample
 tc large-1 gen_random n=$MAXN k=$MAXN maxa=$MAXA mode=random 7
 tc large-2 gen_random n=$MAXN k=$MAXN maxa=$MAXA mode=star 8
 tc large-3 gen_random n=$MAXN k=$MAXN maxa=$MAXA mode=long 9

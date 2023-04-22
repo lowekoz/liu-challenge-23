@@ -1,5 +1,5 @@
 #!/bin/bash
-USE_SCORING=0
+
 . ../../testdata_tools/gen.sh
 
 # For unlimited stack:
@@ -9,6 +9,7 @@ use_solution lk.py lk.cpp
 
 compile gen_random.py
 
+samplegroup
 sample 1
 sample 2
 #sample_manual 1
@@ -17,6 +18,8 @@ sample 2
 #group empty
 #tc empty-001 gen_random n=5 k=5 mode=empty seed=9
 
+group g1 100
+include_group sample
 tc skel-001 gen_random n=10 m=5 seed=1
 tc skel-002 gen_random n=10 m=5 seed=2
 tc skel-003 gen_random n=10 m=5 seed=3

@@ -1,5 +1,5 @@
 #!/bin/bash
-USE_SCORING=0
+
 . ../../testdata_tools/gen.sh
 
 #PPATH=$(realpath ..)
@@ -13,11 +13,14 @@ use_solution lk.cpp
 compile gen_random.py 
 compile gen_targeted.py
 
+samplegroup
 sample 1
 sample 2
 #sample_manual 1
 #sample_manual 2
 
+group g1 100
+include_group sample
 #group empty
 tc empty-001 gen_random n=5 k=5 mode=empty seed=9
 tc empty-002 gen_random n=5 k=5 mode=empty seed=2

@@ -1,5 +1,5 @@
 #!/bin/bash
-USE_SCORING=0
+PPATH=$(realpath ..)
 . ../../testdata_tools/gen.sh
 
 #PPATH=$(realpath ..)
@@ -12,6 +12,7 @@ use_solution solve.py
 
 compile gen_random.py
 
+samplegroup
 sample 1
 sample 2
 #sample_manual 1
@@ -20,6 +21,8 @@ sample 2
 #group empty
 #tc empty-001 gen_random n=5 k=5 mode=empty seed=9
 
+group g1 100
+include_group sample
 tc test-001 gen_random n=10 m=5 extra=0.0 seed=1
 tc test-002 gen_random n=10 m=5 extra=0.0 seed=2
 tc test-003 gen_random n=10 m=5 extra=0.0 seed=3
