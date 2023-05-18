@@ -1,5 +1,5 @@
 #!/bin/bash
-USE_SCORING=0
+
 . ../../testdata_tools/gen.sh
 
 # For unlimited stack:
@@ -9,10 +9,12 @@ use_solution anton_dp.py
 
 compile gen_random.py
 
+samplegroup
 sample 1
 sample 2
 
-
+group g1 100
+include_group sample
 tc coff-001 gen_random n=10 m=5 seed=1
 tc coff-002 gen_random n=10 m=5 seed=2
 tc coff-003 gen_random n=10 m=500 seed=3

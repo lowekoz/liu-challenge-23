@@ -11,6 +11,7 @@ for line in lines[1:n+1]:
     a, b = map(int, line.split())
     assert a >= 0 and b > 0
     assert line.strip() == f"{a} {b}"
+    assert a <= 50 and b <= 50
 
 data = list(range(n))
 
